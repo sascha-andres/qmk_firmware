@@ -87,8 +87,8 @@ const point_t k_rgb_matrix_center = RGB_MATRIX_CENTER;
 #endif
 
 #if !defined(RGB_MATRIX_STARTUP_MODE)
-#    ifndef RGB_MATRIX_CYCLE_ALL
-#        define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_ALL // RGB_MATRIX_CYCLE_LEFT_RIGHT
+#    ifndef RGB_MATRIX_SOLID_REACTIVE
+#        define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE // RGB_MATRIX_CYCLE_LEFT_RIGHT
 #    else
 // fallback to solid colors if RGB_MATRIX_CYCLE_LEFT_RIGHT is disabled in userspace
 #        define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
